@@ -11,8 +11,8 @@ gpio_pin_bcm = 23
 cpu_thermostat = CPUTemperature()
 fan = OutputDevice(gpio_pin_bcm, initial_value=False)
 
-max_threshold = 50
-min_threshold = 35
+max_threshold = 60
+min_threshold = 40
 
 while True:
     temp = cpu_thermostat.temperature
