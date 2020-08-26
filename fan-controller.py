@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 """
 Script to automatically turn the fan on the RPi on/off
 based on CPU temperature thresholds
