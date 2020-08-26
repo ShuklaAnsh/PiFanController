@@ -5,8 +5,9 @@ based on CPU temperature thresholds
 from time import sleep
 from gpiozero import OutputDevice, CPUTemperature
 
+gpio_pin_bcm = 23
 cpu_thermostat = CPUTemperature()
-fan = OutputDevice(14, initial_value=False)
+fan = OutputDevice(gpio_pin_bcm, initial_value=False)
 
 max_threshold = 50
 min_threshold = 35
